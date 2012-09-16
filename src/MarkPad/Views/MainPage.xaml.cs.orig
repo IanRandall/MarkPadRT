@@ -1,6 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+<<<<<<< HEAD
+using System.Diagnostics;
 using System.Text.RegularExpressions;
+=======
+>>>>>>> 939f1d5c0d2985ac0d3d4dd396d8313d9b29fe69
 using GalaSoft.MvvmLight.Messaging;
 using MarkPad.Messages;
 using MarkPad.ViewModel;
@@ -156,7 +160,11 @@ namespace MarkPad.Views
             var dialog = new LinkDialog(selection);
             var viewModel = dialog.DataContext as LinkViewModel;
             dialog.Added = () => TransformText(s => string.Format("[{0}]({1})", viewModel.DisplayText, viewModel.LinkAddress));
+<<<<<<< HEAD
+        
+=======
 
+>>>>>>> 939f1d5c0d2985ac0d3d4dd396d8313d9b29fe69
             dialog.ShowAsync();
         }
 
